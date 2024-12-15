@@ -7,7 +7,7 @@ from deep_translator import GoogleTranslator
 st.title("Translator")
 
 url = st.text_input("Enter the URL of the webpage you want to scrape:")
-st.button("Translate")
+button = st.button("Translate")
 if button:
     article = Article(url)
     article.download()
